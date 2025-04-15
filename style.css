@@ -1,0 +1,155 @@
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body {
+    background: #060505;
+}
+#header {
+    width: 100%;
+    height: 110vh;
+    background-image: url(images/bgimage.jpg);
+    background-size: cover;
+    background-position: center;
+    
+}
+.container {
+   padding: 10px 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.logo {
+   width: 12px;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 10px 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 26px;
+    padding: 5px 10px;
+
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position : absolute;
+    left : 0;
+    bottom -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+.header-text {
+    margin-top: 20px;
+    font-size: 30px;
+
+}
+
+.header-text h1 {
+    color: #fff;
+    font-size: 50px;
+    margin-top: 20px;
+}
+
+.header-text h1 span {
+    color: #ea2a2a;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+/*---about-----------*/
+#about {
+    width: 100%;
+    height: 100vh;
+    background: #060505;
+    color: #fff;
+    padding: 20px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.about-col-1 {
+    flex-basis: 35%;
+}
+
+.about-col-1 img {
+    width: 100%;
+    border-radius: 15px;
+}
+.about-col-2 {
+    flex-basis: 60%;
+}
+.sub-title {
+    font-size: 60px;
+    font-weight: 600;
+    color: #e76991;
+    
+}
+
+.tab-titles {
+    display: flex;
+    margin-bottom: 20px 0 40px;
+}
+.tab-links {
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after {
+    width: 50%;
+}
+
+.tab-contents ul li {
+    list-style: none;
+    margin-bottom: 10px 0;
+}
+
+.tab-contents ul li span {
+    color: #e55280;
+    font-size: 14px ;
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab {
+    display: block;
+}
+
